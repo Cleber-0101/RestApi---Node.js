@@ -2,8 +2,6 @@ const express = require('express')
 
 const server = express()
 
-
-
 //Req query params 
 server.get('/teste', (req,res) => {
     const nome = req.query.nome
@@ -17,7 +15,6 @@ server.get('/teste/:id' , (req,res) => {
     return res.json({cai_aqui : `teste ${id}`})
 })
 
-
 const nomesFamilia = ["cleber" ,"jessica" , "Nour Batista"];
 
 //Req Body
@@ -28,3 +25,6 @@ server.get('/nomes/:index', (req,res) => {
 })
 
 server.listen(3000)
+
+
+
